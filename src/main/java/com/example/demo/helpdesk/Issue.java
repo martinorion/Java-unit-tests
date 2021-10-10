@@ -1,4 +1,4 @@
-package com.example.demo.services.helpdesk;
+package com.example.demo.helpdesk;
 
 /**
  * Practical Unit Testing with JUnit and Mockito - source code for exercises.

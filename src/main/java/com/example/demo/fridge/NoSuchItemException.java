@@ -1,4 +1,4 @@
-package com.example.demo.services.fridge;
+package com.example.demo.fridge;
 
 public class NoSuchItemException extends Exception {
 	public NoSuchItemException(String message) {

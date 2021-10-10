@@ -1,7 +1,6 @@
-package com.example.demo.services.car;
+package com.example.demo.car;
 
 import java.awt.*;
-import java.util.Objects;
 
 public class CarImpl implements Car{
 

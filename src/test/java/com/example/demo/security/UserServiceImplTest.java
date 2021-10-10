@@ -1,4 +1,4 @@
-package com.example.demo.services.security;
+package com.example.demo.security;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -31,7 +31,7 @@ public class UserServiceImplTest
     }
 
     @Test
-    public void should_set_md5_password_when_calling_assignPassword()
+    public void should_call_set_password_with_md5_password_when_calling_assignPassword()
     {
         userService.assignPassword(user);
         verify(user).setPassword("passwordMD5");

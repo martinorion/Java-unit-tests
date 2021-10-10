@@ -1,4 +1,4 @@
-package com.example.demo.services.car;
+package com.example.demo.car;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

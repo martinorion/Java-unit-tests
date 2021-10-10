@@ -1,4 +1,4 @@
-package com.example.demo.services.security;
+package com.example.demo.security;
 
 import org.springframework.stereotype.Service;
 

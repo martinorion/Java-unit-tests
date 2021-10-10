@@ -1,4 +1,4 @@
-package com.example.demo.services.helpdesk;
+package com.example.demo.helpdesk;
 
 import java.util.Calendar;
 
