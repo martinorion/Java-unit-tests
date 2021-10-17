@@ -23,7 +23,7 @@ public class CarSearchServiceTest
     }
 
     @Test
-    public void should_return_no_sport_cars_when_one_non_sport_car_was_added() {
+    public void should_return_no_sport_cars_when_only_one_non_sport_car_was_added() {
         Car nonSportCar = new CarImpl(new Engine(2), Color.BLACK, new Manufacturer("Lada"));
         carSearchService.addCar(nonSportCar);
         assertThat(carSearchService.findSportCars(), empty());

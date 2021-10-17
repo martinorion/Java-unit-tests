@@ -1,7 +1,5 @@
 package com.example.demo.car;
 
-import java.util.Objects;
-
 public class Manufacturer {
 	private String name;
 
