@@ -20,24 +20,11 @@ public class FridgeServiceTest
 
     @Test
     public void should_add_item_to_fridge() {
-        String milk = "milk";
-        fridgeService.put(milk);
-        assertTrue(fridgeService.contains(milk));
+
     }
 
     @Test
     public void should_not_have_item_after_taken_out() {
-        String milk = "milk";
-        fridgeService.put(milk);
-        try
-        {
-            fridgeService.take(milk);
-        }
-        catch(NoSuchItemException e)
-        {
-            e.printStackTrace();
-        }
-        assertFalse(fridgeService.contains(milk));
 
     }
 }
