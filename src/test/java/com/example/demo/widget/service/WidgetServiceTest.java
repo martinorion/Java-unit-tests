@@ -38,8 +38,8 @@ public class WidgetServiceTest {
         Optional<Widget> returnedWidget = service.findById(1l);
 
         // Assert the response
-        Assertions.assertTrue(returnedWidget.isPresent(), "Widget was not found");
-        Assertions.assertSame(returnedWidget.get(), widget, "The widget returned was not the same as the mock");
+        Assertions.assertTrue(returnedWidget.isPresent(), "Widget was found");
+        Assertions.assertSame(returnedWidget.get(), widget, "The widget returned was the same as the mock");
     }
 
     @Test

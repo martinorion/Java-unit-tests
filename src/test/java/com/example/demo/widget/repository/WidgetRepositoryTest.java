@@ -35,31 +35,27 @@ public class WidgetRepositoryTest {
     @Test
     @DataSet("widgets.yml")
     void testFindAll() {
+        // call findAll method
         List<Widget> widgets = Lists.newArrayList(repository.findAll());
+        // assert that correct number of widgets was returned based on the DataSet
         Assertions.assertEquals(2, widgets.size(), "Expected 2 widgets in the database");
     }
 
     @Test
     @DataSet("widgets.yml")
     void testFindByIdSuccess() {
-        // test findById for ID 1, use assertEquals on all Widget properties
-        Optional<Widget> widget = repository.findById(1L);
-        Assertions.assertTrue(widget.isPresent(), "We should find a widget with ID 1");
+        //  call findById method
 
-        Widget w = widget.get();
-        Assertions.assertEquals(1, w.getId(), "The widget ID should be 1");
-        Assertions.assertEquals("Widget 1", w.getName(), "Incorrect widget name");
-        Assertions.assertEquals("This is widget 1", w.getDescription(), "Incorrect widget description");
-        Assertions.assertEquals(1, w.getVersion(), "Incorrect widget version");
-        //delete
+        // use assertEquals on all Widget properties
+
+
     }
 
     @Test
     @DataSet("widgets.yml")
     void testFindByIdNotFound() {
-        // test id that is not specified in widgets.yml and assert that it is not found
-        Optional<Widget> widget = repository.findById(3L);
-        Assertions.assertFalse(widget.isPresent(), "A widget with ID 3 should not be found");
+        // test findById for ID that is not present in widgets.yml dataset and assert that it is not found
+
     }
 
     @Test
