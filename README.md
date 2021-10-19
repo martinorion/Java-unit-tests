@@ -70,6 +70,8 @@ Podobne doplnte ostatne prazde testovacie metody vo WidgetServiceTest.java tried
 Controller testy sa nachadzaju v triede WidgetRestControllerTest.java a testuju API definovane vo WidgetRestController triede.
 Pomocou triedy MockMvc je mozne vykonat request (get,post,put,delete) a otestovat funcionality daneho endpointu.
 
+priklad: https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/
+
 Ako prve je potrebne namockovat data pomocou doReturn metody
 
 ```sh
