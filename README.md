@@ -4,7 +4,7 @@
 ktory sa nachadza v baliku src/main/java/com/example/demo/widget 
 V tomto balíku je jednoducha webova aplikacia, 
 ktora umoznuje vytvoriť, editovat, precitat alebo vymazať widgety. 
-Widgety su ulozene v DB, k tim sa pristupuje pomocou triedy WidgetRepository 
+Widgety su ulozene v DB, k tym sa pristupuje pomocou triedy WidgetRepository 
 a logika je umiestnená v triede WidgetService.
 ![Image of widget arch](https://images.idgesg.net/images/article/2020/05/jw-osjp-junit5tutorial-p2fig1-100841694-large.jpg?auto=webp)
 
@@ -12,14 +12,14 @@ a logika je umiestnená v triede WidgetService.
 Testy je mozne spustit priamo cez intellij.
 Na lavo od nazvu konkretneho testu alebo testovacej triedy je zelena sipka.
 Po kliknuti na nu je mozne spustit konkretny test alebo
-v pripade nazvy danej triedy je mozne spustit vsetky testy v danej triedy.
+v pripade nazvu danej triedy je mozne spustit vsetky testy v konkretnej triedy.
 
 ## How to run tests with coverage
 
 Taktiez je možné spustit testy spolu s coverage.
 Ten nam na pravej strane zobrazi nazov pokrytej triedy spolu s %,
 kolko tried, metod a riadkov kodu je pokrytich vykonanymi testami.
-Po dvojkliku sa triedy otvory v novom tabe a kazdy riadok kodu ma
+Po dvojkliku v pravo na triedu sa otvori v novom tabe a kazdy riadok kodu ma
 naľavo bud zelenu (je otestovany) alebo cervenu farbu (nie je otestovany).
 
 
