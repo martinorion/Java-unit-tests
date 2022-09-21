@@ -34,19 +34,18 @@ public class WidgetRepositoryTest {
 
     @Test
     @DataSet("widgets.yml")
-    void testFindAll() {
+    void find_all() {
         // call findAll method
-        List<Widget> widgets = Lists.newArrayList(repository.findAll());
+
         // assert that correct number of widgets was returned based on the DataSet
-        Assertions.assertEquals(2, widgets.size(), "Expected 2 widgets in the database");
     }
 
     @Test
     @DataSet("widgets.yml")
-    void testFindByIdSuccess() {
-        //  call findById method
+    void findByIdSuccess() {
+        // call findById method
 
-        // use assertEquals on all Widget properties
+        // use assert equals on all Widget properties
 
 
     }
@@ -60,10 +59,8 @@ public class WidgetRepositoryTest {
 
     @Test
     @DataSet("widgets.yml")
-    void testFindWidgetsWithNameLike() {
+    void find_widgets_with_name_like() {
         // test method findWidgetsWithNameLike that it returns correct number of widgets
-        List<Widget> widgets = repository.findWidgetsWithNameLike("Widget%");
-        Assertions.assertEquals(2, widgets.size());
 
     }
 }
